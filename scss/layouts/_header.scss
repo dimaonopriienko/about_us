@@ -1,0 +1,15 @@
+.section {
+  padding: 0px 34px 14px;
+  .logo{
+    float: left;
+  }
+  .add-text{
+    float: right;
+    font-size: 29px;
+    color: $grey;
+    span{
+      float: left;
+      margin-right: 13px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.main-nav{
+  background-color: $nav-background;
+  padding: 8px 0 0 25px;
+  li{
+    float: left;
+    a{
+      display: block;
+      color: $white;
+      font-size: 10px;
+      padding: 9px 15px 11px;
+      font-weight: bold;
+      text-decoration: none;
+      background-color: $menu-color;
+      margin-right: 2px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      &:hover{
+        background-color: $white;
+        color:  $menu-color;
+      }
+    }
+    a.active{
+      background-color: $white;
+      color:  $menu-color;
+    }
+  }
+}

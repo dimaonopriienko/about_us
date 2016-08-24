@@ -1,0 +1,155 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/iconmoon/icomoon.eot?f7jhtw");
+  src: url("../fonts/iconmoon/icomoon.eot?f7jhtw#iefix") format("embedded-opentype"), url("../fonts/iconmoon/icomoon.ttf?f7jhtw") format("truetype"), url("../fonts/iconmoon/icomoon.woff?f7jhtw") format("woff"), url("../fonts/iconmoon/icomoon.svg?f7jhtw#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-check-circle:before {
+  content: "\e900"; }
+
+.section {
+  padding: 0px 34px 14px; }
+  .section .logo {
+    float: left; }
+  .section .add-text {
+    float: right;
+    font-size: 29px;
+    color: #959ca1; }
+    .section .add-text span {
+      float: left;
+      margin-right: 13px; }
+
+.breadcrumbs {
+  color: #959ca1;
+  letter-spacing: 1px;
+  margin-bottom: 34px; }
+  .breadcrumbs li {
+    float: left; }
+    .breadcrumbs li a {
+      text-decoration: none;
+      color: #959ca1;
+      font-size: 10px;
+      display: block;
+      margin-right: 14px; }
+      .breadcrumbs li a:hover {
+        text-decoration: underline; }
+
+#main {
+  font-family: Arial,sans-serif;
+  font-size: 12px;
+  padding: 10px 13px 0 24px; }
+  #main h2 {
+    color: #e4701e;
+    letter-spacing: -2px;
+    font-size: 28px;
+    font-family: Arial;
+    margin-bottom: 50px; }
+  #main .content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start; }
+    #main .content-wrapper .content {
+      order: 0;
+      flex: 1 1 auto;
+      align-self: auto;
+      column-count: 2;
+      color: #959ca1; }
+      #main .content-wrapper .content p {
+        margin-bottom: -6px;
+        padding: 0px 36px 14px 0px;
+        line-height: 18px; }
+      #main .content-wrapper .content .question {
+        color: #000;
+        font-weight: bold; }
+      #main .content-wrapper .content img {
+        display: block; }
+
+#wrapper {
+  min-width: 1000px;
+  margin: 30px 50px; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.main-nav {
+  background-color: #fea501;
+  padding: 8px 0 0 25px; }
+  .main-nav li {
+    float: left; }
+    .main-nav li a {
+      display: block;
+      color: #fff;
+      font-size: 10px;
+      padding: 9px 15px 11px;
+      font-weight: bold;
+      text-decoration: none;
+      background-color: #e4701e;
+      margin-right: 2px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px; }
+      .main-nav li a:hover {
+        background-color: #fff;
+        color: #e4701e; }
+    .main-nav li a.active {
+      background-color: #fff;
+      color: #e4701e; }
+
+.sidebar {
+  width: 196px;
+  min-width: 196px;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto; }

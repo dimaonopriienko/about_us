@@ -1,0 +1,59 @@
+.breadcrumbs{
+  color: $grey;
+  letter-spacing: 1px;
+  margin-bottom: 34px;
+  li{
+    float: left;
+    a{
+      text-decoration: none;
+      color: $grey;
+      font-size: 10px;
+      display: block;
+      margin-right:14px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+#main{
+  font-family:Arial,sans-serif;
+  font-size: 12px;
+  padding:10px 13px 0 24px;
+  h2{
+    color: $menu-color;
+    letter-spacing: -2px;
+    font-size: 28px;
+    font-family: Arial;
+    margin-bottom: 50px;
+  }
+  .content-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    .content{
+      order: 0;
+      flex: 1 1 auto;
+      align-self: auto;
+      column-count: 2;
+      color: $grey;
+      //column-gap: 35px;
+      p{
+        margin-bottom: -6px;
+        padding: 0px 36px 14px 0px;
+        line-height: 18px;
+      }
+      .question{
+        color: $black;
+        font-weight:bold;
+      }
+      img{
+        display: block;
+      }
+    }
+  }
+}
