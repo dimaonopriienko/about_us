@@ -1,27 +1,174 @@
+.navigation{
+  background-color: $nav-background;
+  padding-left: 28px;
+  @include media('<tablet'){
+    position: absolute;
+    padding: 0;
+    width: 100%;
+  }
+  .main-nav{
+    background-color: $nav-background;
+    >li{
+      background-color: $nav-background;
+      float: left;
+      width: auto;
+      position: initial;
+      padding-top: 7px;
+      @include media('<tablet'){
+        position: relative;
+        padding-top: 0;
+      }
+      .touch-button{
+        display: none;
+        @include media('<tablet'){
+          display: block;
+          height: 32px;
+        }
+        .navicon{
+          top:1em;
+        }
+      }
+      @include media('<tablet'){
+        float: none;
+      }
+      >a{
+        display: block;
+        color: $white;
+        font-size: 10px;
+        padding: 11px 14px 7px;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: $menu-color;
+        margin-right: 2px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-left:none;
+        @include media('<tablet'){
+          border-radius:0;
+          border-bottom: 1px solid #d49362;
+          font-size: 14px;
+        }
+        &:hover{
+          background-color: $white;
+          color:   $menu-color;
+          cursor: pointer;
+        }
+      }
+      &.item-with-ul{
+        ul{
+          display: none;
+          position: absolute;
+          left: 0px;
+          //padding: 9px 24px;
+          font-size: 10px;
+          @include media('<tablet'){
+            position: relative;
+          }
+          li{
+            width: auto;
+            background: none;
+            a{
+              background: transparent;
+              width: auto;
+              border-left:none;
+              text-decoration: none;
+              color: #ccc;
+              font-size: 10px;
+              display: inline-block;
+              @include media('<tablet'){
+                width: 100%;
+                color: #000;
+                overflow: visible;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*
+
 .main-nav{
   background-color: $nav-background;
   padding: 8px 0 0 25px;
+  position: relative;
+  display: block;
+  @include media('<tablet'){
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    display: none;
+  }
   li{
     float: left;
-    a{
+    @include media('<tablet'){
+      float: none;
+    }
+    &:hover{
+      .dropdown-content{
+        display: block;
+      }
+    }
+    >a{
       display: block;
       color: $white;
       font-size: 10px;
-      padding: 9px 15px 11px;
+      padding: 11px 14px 7px;
       font-weight: bold;
       text-decoration: none;
       background-color: $menu-color;
       margin-right: 2px;
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
+      @include media('<tablet'){
+        border-radius:0;
+        border-bottom: 1px solid #d49362;
+        font-size: 14px;
+      }
       &:hover{
         background-color: $white;
-        color:  $menu-color;
+        color:   $menu-color;
+        cursor: pointer;
       }
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      left: 0px;
+      padding: 9px 24px;
+      font-size: 10px;
+      @include media('<tablet'){
+        position: relative;
+        padding: 0 24px;
+      }
+      li{
+        a{
+          a{
+            text-decoration: none;
+            color: #ccc;
+            font-size: 10px;
+            display: inline-block;
+            margin-right: 15px;
+            @include media('<tablet'){
+              margin-right: 0;
+              padding: 10px 30px;
+              font-size: 12px;
+              width: 100%;
+              color: #000;
+              border-bottom: 1px solid $white;
+              &:last-child{
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+
     }
     a.active{
       background-color: $white;
       color:  $menu-color;
     }
   }
-}
+}*/

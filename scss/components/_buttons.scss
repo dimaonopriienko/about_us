@@ -1,0 +1,61 @@
+.opener{
+        display: none;
+        float:right;
+        width:31px;
+        height:31px;
+        background:$menu-color;
+        position:absolute;
+        border-radius:3px;
+        text-indent:-9999px;
+        overflow:hidden;
+        top: 10px;
+        left: 85%;
+        padding: 0;
+        @include media('<tablet'){
+             display: block;
+            }
+        &.active{
+              background: $menu-color;
+              &:before{
+                  transform:rotate(-45deg);
+                  top: 16px;
+                  left: 15%;
+                  right: 15%;
+              }
+              &:after,&.before{
+                  transform:rotate(45deg);
+                  top:16px;
+                  left:15%;
+                  right:15%;
+              }
+              span{
+                  display: none;
+              }
+        }
+        &:before,&:after{
+                  content:'';
+                  top:10px;
+                  background:#fff;
+                  position:absolute;
+                  left:25%;
+                  right:25%;
+                  height:3px;
+                  margin-top:-2px;
+                  transition:all 0.2s linear;
+              }
+        &:after{
+                  top: 22px;
+              }
+        span.touch-button{
+                  background:#fff;
+                  border-radius:4px;
+                  position:absolute;
+                  top:16px;
+                  left:25%;
+                  right:25%;
+                  height:3px;
+                  width: auto;
+                  margin-top:-2px;
+                  transition:all 0.2s linear;
+              }
+        }
