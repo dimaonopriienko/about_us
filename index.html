@@ -1,61 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/app.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Counter Space</title>
+  <link media="all" rel="stylesheet" href="build/css/vendor.css">
+  <link media="all" rel="stylesheet" href="build/css/style.css">
 </head>
+
 <body>
-    <div id="wrapper">
-        <header id="header" class="clearfix">
-            <div class="section clearfix">
+  <div id="wrapper">
+        <header id="header">
+            <div class="section">
                 <div class="logo">
-                    <a href=""><img src="images/logo.png" alt="logo"></a>
+                    <a href=""><img src="build/images/logo.png" alt="logo"></a>
                 </div>
-                <div class="add-text">
+                <div class="slogan">
                     <span>typography, design & innovation</span>
-                    <img src="images/logo1.png" alt="image description">
+                    <img src="build/images/logo1.png" alt="image description">
                 </div>
             </div>
-            <span href="#" class="opener menu-button"></span>
-            <nav class="navigation clearfix">
-               <!--<ul class="main-nav flexnav clearfix">
-                <li><a href="#">home</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">secondary nav1</a></li>
-                        <li><a href="#">secondary nav1</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">design</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">secondary nav1</a></li>
-                        <li><a href="#">secondary nav1</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="active">about us</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">secondary nav</a></li>
-                        <li><a href="#">secondary nav</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">typography</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">secondary nav1</a></li>
-                        <li><a href="#">secondary nav1</a></li>
-                    </ul>
-                <li><a href="#">contact us</a>
-                   <ul class="dropdown-content">
-                       <li><a href="#">secondary nav1</a></li>
-                       <li><a href="#">secondary nav1</a></li>
-                   </ul>
-                </li>
-            </ul>-->
-                <ul data-breakpoint="800" class="main-nav flexnav with-js opacity lg-screen">
+            <span class="opener menu-button"></span>
+            <nav class="navigation">
+                <ul data-breakpoint="768" class="main-nav flexnav">
                     <li class="item-with-ul"><a href="#">home</a>
                         <ul>
                             <li><a href="#">secondary nav1</a></li>
@@ -94,10 +62,10 @@
                 </ul>
             </nav>
         </header>
-        <main id="main">
+        <main id="main">            
             <h2>pretty pictures</h2>
             <div class="content-wrapper">
-                <section class="content">
+                <div class="content">
                     <span class="question">How do we do it?</span>
                     <p>To create a successful design we first must  learn about your company, your ideas, your plans and become an extension of your staff to allow us to create a product that is truly
                         a statement about your company</p>
@@ -109,26 +77,89 @@
                     <p>Education and learning drives us. Education is the reason why people internet surf, whether they are looking for the best deals or researching a paper. We help you plan your content and web site experience so that your users will be educated and will keep coming back.</p>
                     <p>We have spent the last decade living and breathing multimedia. Timelines, games, applications you name it we have produced successful products across a wide range of platforms and industries. </p>
                     <p>We founded counterspace to enable us to utilize our expertise, have fun and deliver high end products to our clients. Without compromise. Without excuses.</p>
-                    <img src="images/img-1.png" alt="image description">
+                    <img src="build/images/img-1.png" alt="image description">
                     <span class="question">Another design company?</span>
                     <p>We grew up with the internet, we had fun, we experimented and we helped develop interactivity standards and influence thousands of people online. We understand the internet. It’s history and it’s future.</p>
                     <p>The internet changes weekly and while we do not proclaim that we know everything, we use our experience to solve new problems, learn new </p>
-                </section>
+                </div>
                 <aside class="sidebar">
-                    iui
+                    <img src="build/images/img-2.png" alt="image description">
+                    <h2>related things</h2>
+                    <div class="related-things">
+                        <article class="aside-article">
+                            <a href="#"><h3>Univers</h3></a>
+                            <p>cles that blame designers for controlling pages, fixing sizes and maki</p>
+                        </article>
+                        <article class="aside-article">
+                            <a href="#"><h3>Trade Gothic</h3></a>
+                            <p>cles that blame designers for controlling pages, fixing sizes and maki</p>
+                        </article>
+                        <article class="aside-article">
+                            <a href="#"><h3>Franklin Gothic</h3></a>
+                            <p>cles that blame designers for controlling pages, fixing sizes and maki</p>
+                        </article>
+                        <article class="aside-article">
+                            <a href="#"><h3>What is a font?</h3></a>
+                            <p>cles that blame designers for controlling pages, fixing sizes and maki</p>
+                        </article>
+                    </div>
                 </aside>
             </div>
-
+            <section class="design-types">
+                <h2>design is much more than visual</h2>
+                <div>
+                    <ul class="design-type">
+                    <li><p>design systems</p></li>
+                    <li><a href="#">vshift identity evolution</a></li>
+                    <li><a href="#">HarperCollins identities</a></li>
+                </ul>
+                <ul class="design-type">
+                    <li>
+                        <p>interface design</p>
+                    </li>
+                    <li><a href="#">HarperCollins Speakers Bureau</a></li>
+                    <li><a href="#">HarperCollins Childrens</a></li>
+                </ul>
+                <ul class="design-type">
+                    <li>
+                        <p>information design</p>
+                    </li>
+                    <li><a href="#">Merrill Lynch Money Management System</a></li>
+                    <li><a href="#">Citibank USer interface</a></li>
+                    <li><a href="#">Merrill Lynch MLPrime Brokerage</a></li>
+                </ul>
+                <ul class="design-type">
+                    <li>
+                        <p>information design</p>
+                    </li>
+                    <li><a href="#">Merrill Lynch Money Management System</a></li>
+                    <li><a href="#">Citibank USer interface</a></li>
+                    <li><a href="#">Merrill Lynch MLPrime Brokerage</a></li>
+                </ul>
+                </div>
+                
+            </section>
         </main>
         <footer id="footer">
-
+                <div class="text-left">
+                    copyright 2003-2006 © counterspace. all rights reserved.
+                </div>
+                <div class="text-right">
+                    <ul class="address">
+                        <li><a href="#">larchmont, new york</a></li>
+                        <li><a href="#">boston, massachusetts</a></li>
+                    </ul>
+                </div>
+                
         </footer>
     </div>
-    <script src="bower_components/jQuery/dist/jquery.min.js"></script>
-    <script src="bower_components/OwlCarousel/owl-carousel/owl.carousel.js"></script>
-    <script src="bower_components/flexnav/js/jquery.flexnav.min.js"></script>
-    <script>
-        $(".flexnav").flexNav();
-    </script>
+  <script src="build/js/vendor.js"></script>
+  <script src="build/js/app.js"></script>
+  <script>
+      $(".flexnav").flexNav({
+          'hover': true
+      });
+  </script>
 </body>
+
 </html>
